@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+:root{
+    --blue: white;
+}
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+}
+h1,h2,h3,h4,h5,h6, button{
+    font-family: 'Fraunces', serif;
+}
+header{
+    background-color: rgba(60,190,254,255);
+    padding:20px 35px;
+    color: white !important;
+}
+
+.nav-item a{
+    color: white ;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin-inline: 15px;
+}
+#main-menu form button{
+    color: black;
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    padding: 12px 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid white;
+}
+#main-menu form button:hover{
+    color: white;
+    background-color:rgba(120,190,254,255) ;
+    border: 1px solid transparent;
+
+}
+.hero .container{
+    background-position: center;
+    background-size: cover;
+}
+.hero .container-fluid h1{
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-size: 6rem;
+}
+.hero .container-fluid img{
+    margin-bottom: 200px;
+}
+.service-text, .service-text-1{
+    padding: 180px 120px 150px;
+}
+.service-text h3, .service-text-1 h3{
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: hsl(212, 27%, 19%);
+}
+.service-text p , .service-text-1 p{
+    padding-bottom: 70px;
+    color: hsl(232, 10%, 55%);
+}
+.service-text button, .service-text-1 button{
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    background: transparent;
+    position: relative;
+    isolation: isolate;
+}
+.service-text button::before{
+    content: '';
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    transition: 0.6s all ease-in-out;
+    background-color:hsl(51, 100%, 89%);
+}
+.service-text button:hover::before{
+    background-color:hsl(51, 100%, 69%);
+    height: 15px;
+}
+.service-text-1 button::before{
+    content: '';
+    position: absolute;
+    opacity: 0.9;
+    z-index: -1;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    transition: 0.6s all ease-in-out;
+    background-color:hsl(7, 99%, 90%);
+}
+.service-text-1 button:hover::before{
+    background-color:hsl(7, 99%, 70%);
+    height: 15px;
+}
+.last-two{
+    padding-top: 300px;
+    background-size: cover;
+    background-position: top center;
+}
+.content-last-two{
+    text-align: center;
+    padding-inline: 150px;
+    padding-block: 60px;
+}
+.content-last-two h4{
+    margin-top: 100px;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.content-last-two p{
+    padding-inline: 20%;
+}
+.design{
+    color: hsl(167, 40%, 24%);
+}
+.photo{
+    color: hsl(198, 62%, 26%);
+}
+.services .container-fluid div img{
+    height: 100%;
+}
+.testimonials h6{
+    color:hsl(232, 10%, 55%);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    margin: 130px 0 100px;
+}
+.client{
+    padding-bottom: 150px;
+}
+.client img{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    max-width: 20%;
+    margin-bottom: 50px;
+}
+.client p{
+    color: hsl(213, 9%, 39%);
+    padding-bottom: 80px;
+}
+.client h3{
+    font-weight: bolder;
+    color: hsl(212, 27%, 19%);
+    padding-bottom: 15px;
+}
+.client h5{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color:hsl(232, 10%, 55%);
+}
+footer{
+    padding-top: 60px;
+    color: hsl(168, 34%, 41%);
+    background-color: rgba(144,213,196,255);
+}
+footer a{
+    margin-inline: 10px;
+    color: hsl(168, 34%, 41%);
+}
+footer a img{
+    padding: 5px;
+    border-radius: 10px;
+}
+footer ul{
+    padding-block: 30px;
+}
+footer a:hover{
+    color: white;
+}
+footer a img:hover{
+    background-color: white;
+}
+@media(max-width:992px){
+    #main-menu{
+        background-color: white;
+        margin-top: 40px;
+        padding-block: 20px;
+        position: relative;
+    }
+    #main-menu::after{
+        content: '';
+        position: absolute;
+        background-color: white;
+        top: -29px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+    .nav-link{
+        color:hsl(213, 9%, 39%) !important;
+    }
+    #main-menu button{
+        background-color: hsl(51, 100%, 49%) !important;
+    }
+}
